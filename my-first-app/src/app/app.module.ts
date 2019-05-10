@@ -1,6 +1,7 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { AppComponent } from './app.component';
+import { LodashProvider } from './common/lodash.token';
 
 @NgModule({
   declarations: [
@@ -9,7 +10,9 @@ import { AppComponent } from './app.component';
   imports: [
     BrowserModule
   ],
-  providers: [],
+  providers: [
+    LodashProvider
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
