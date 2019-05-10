@@ -1,21 +1,26 @@
 import { BrowserModule } from '@angular/platform-browser';
+import { FormsModule } from '@angular/forms';
 import { NgModule } from '@angular/core';
 import { AppComponent } from './app.component';
-import { LodashProvider, CKEDITORProvider } from './common/common.index';
+import { LodashProvider, CKEDITORProvider, jQueryProvider } from './common/common.index';
 import { CkeditorInlineDirective } from './common/directives/ckeditor-inline.directive';
+import { JqueryDatePicker } from './common/directives/jquery-datepicker.directive';
 
 
 @NgModule({
   declarations: [
     AppComponent,
-    CkeditorInlineDirective
+    CkeditorInlineDirective,
+    JqueryDatePicker
   ],
   imports: [
-    BrowserModule
+    BrowserModule,
+    FormsModule
   ],
   providers: [
     LodashProvider,
-    CKEDITORProvider
+    CKEDITORProvider,
+    jQueryProvider
   ],
   bootstrap: [AppComponent]
 })

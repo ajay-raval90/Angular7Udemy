@@ -1,5 +1,5 @@
 import { Component, Inject } from '@angular/core';
-import { Lodash ,CKEDITOR} from './common/common.index';
+import { Lodash ,CKEDITOR, jQuery} from './common/common.index';
 
 
 @Component({
@@ -12,7 +12,7 @@ export class AppComponent {
    *
    */
   person: any;
-  constructor(@Inject(Lodash) public _ld, @Inject(CKEDITOR) public CKEDITOR) {
+  constructor(@Inject(Lodash) public _ld, @Inject(jQuery) public $) {
     let people = [
       {
         FirstName: "Ajay",
@@ -29,6 +29,9 @@ export class AppComponent {
     ];
     this.person = _ld.find(people, function (p) {
       return p.FirstName == "Ajay";
+    });
+    $(document).ready(function(){
+      
     });
   }
 }

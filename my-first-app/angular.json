@@ -25,11 +25,14 @@
             ],
             "styles": [
               "node_modules/bootstrap/dist/css/bootstrap.min.css",
-              "src/styles.css"
+              "src/styles.css",
+              "src/scripts/jquery-ui/jquery-ui.min.css"
             ],
             "scripts": [
               "src/scripts/lodash/lodash.js",
-              "src/scripts/ckeditor/ckeditor.js"
+              "src/scripts/ckeditor/ckeditor.js",
+              "node_modules/jquery/dist/jquery.min.js",
+              "src/scripts/jquery-ui/jquery-ui.min.js"
             ],
             "es5BrowserSupport": true
           },
