@@ -20,14 +20,16 @@
             "tsConfig": "src/tsconfig.app.json",
             "assets": [
               "src/favicon.ico",
-              "src/assets"
+              "src/assets",
+              "src/scripts"
             ],
             "styles": [
               "node_modules/bootstrap/dist/css/bootstrap.min.css",
               "src/styles.css"
             ],
             "scripts": [
-              "src/scripts/lodash/lodash.js"
+              "src/scripts/lodash/lodash.js",
+              "src/scripts/ckeditor/ckeditor.js"
             ],
             "es5BrowserSupport": true
           },

@@ -1,7 +1,8 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { AppComponent } from './app.component';
-import { LodashProvider } from './common/lodash.token';
+import { LodashProvider, CKEDITORProvider } from './common/common.index';
+
 
 @NgModule({
   declarations: [
@@ -11,7 +12,8 @@ import { LodashProvider } from './common/lodash.token';
     BrowserModule
   ],
   providers: [
-    LodashProvider
+    LodashProvider,
+    CKEDITORProvider
   ],
   bootstrap: [AppComponent]
 })
