@@ -27,9 +27,7 @@ export class AppComponent {
         LastName: "P"
       },
     ];
-    console.log(CKEDITOR)
     this.person = _ld.find(people, function (p) {
-      console.log(p);
       return p.FirstName == "Ajay";
     });
   }
